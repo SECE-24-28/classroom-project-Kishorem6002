@@ -1,0 +1,8 @@
+const mongoose = require("mongoose")
+const Counter = require("./Counter")
+
+const studentSchema = new mongoose.Schema({
+    rollno : {type:Number,unique:true},
+    name : {type:String,required : true},
+    email : {type:String,required : true,unique : true}
+})      
